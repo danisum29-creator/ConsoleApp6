@@ -4,7 +4,24 @@
     {
         static void Main(string[] args)
         {
-            
+            List<dispositivo> dispos = new List<dispositivo>();
+            Console.WriteLine("cuantos dispositivos desea ingresar?");
+            int n = int.Parse(Console.ReadLine());
+            for(int i = 1; i<= n ; i++)
+            {
+                dispositivo d = new dispositivo();
+                Console.WriteLine("nombre: ");
+                d.Nombre = Console.ReadLine();
+                Console.WriteLine("prueba 1: ");
+                d.resultado1 = double.Parse(Console.ReadLine());
+                Console.WriteLine("prueba 2: ");
+                d.resultado2 = double.Parse(Console.ReadLine());
+                Console.WriteLine("prueba 3: ");
+                d.resultado3 = double.Parse(Console.ReadLine());
+
+
+
+            }
         }
 
         class dispositivo
