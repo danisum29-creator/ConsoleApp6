@@ -18,9 +18,22 @@
                 d.resultado2 = double.Parse(Console.ReadLine());
                 Console.WriteLine("prueba 3: ");
                 d.resultado3 = double.Parse(Console.ReadLine());
+                dispos.Add(d);
 
+                Console.WriteLine("\n---LISTADO DE DISPOSITIVOS---");
+                foreach(dispositivo d in dispos)
+                {
+                    d.MostrarDatos();
+                    if(d.CalcularPromedio()>=80)
+                    {
+                        Console.WriteLine("optimo");
 
-
+                    }
+                    else if(d.CalcularPromedio()<80)
+                    {
+                        Console.WriteLine("necesita mantenimiento");
+                    }
+                }
             }
         }
 
